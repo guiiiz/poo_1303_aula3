@@ -3,6 +3,8 @@
 using namespace std;
 
 int main() {
+    char continuar;
+    do {
    // Declaração de variáveis para as notas do semestre
    double nota1, nota2, nota3, nota4;
    
@@ -33,8 +35,11 @@ int main() {
    if(soma >= 7){
        cout << "Parabéns! Você foi aprovado! " << endl;
    }else{
-       cout << "Eita! Você foi reprovado!" << endl;
+       cout << "Infelizmente você foi reprovado!" << endl;
    }
-   
+   cout << "Deseja continuar? (s/n) >>> ";
+   cin >> continuar;
+} while (continuar == 's' || continuar == 'n');
+
    return 0;
 }
