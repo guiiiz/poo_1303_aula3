@@ -39,7 +39,7 @@ int main() {
    }
    cout << "Deseja continuar? (s/n) >>> ";
    cin >> continuar;
-} while (continuar == 's' || continuar == 'n');
+} while (continuar == 's' || continuar == 'S');
 
    return 0;
 }
